@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  mosquitto:
+    image: eclipse-mosquitto:latest
+    container_name: mqtt_broker
+    hostname: mqtt_broker
+    restart: unless-stopped
+    ports:
+      - "1883:1883"     # Puerto MQTT
+      - "9001:9001"     # Puerto WebSocket (opcional)
+    volumes:
+      - ./mosquitto.conf:/mosquitto/config/mosquitto.conf
+      - ./data:/mosquitto/data
+      - ./log:/mosquitto/log
+      - ./passwd:/mosquitto/config/passwd
+    networks:
+      - mqtt_network
+
+networks:
+  mqtt_network:
+    driver: bridge
+
+# Comando para iniciar: docker-compose up -d
+# Comando para detener: docker-compose down
+# Ver logs: docker-compose logs -f mosquitto

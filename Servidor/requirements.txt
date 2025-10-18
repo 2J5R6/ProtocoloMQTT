@@ -1,0 +1,31 @@
+# ============================================
+# DEPENDENCIAS PYTHON - TALLER MQTT
+# Universidad Militar Nueva Granada
+# ============================================
+
+# Cliente MQTT
+paho-mqtt==1.6.1
+
+# PostgreSQL
+psycopg2-binary==2.9.9
+
+# Variables de entorno
+python-dotenv==1.0.0
+
+# Utilidades adicionales (opcional)
+# pytz==2023.3              # Manejo de zonas horarias
+# colorama==0.4.6           # Colores en terminal
+# tabulate==0.9.0           # Tablas formateadas en consola
+
+# ============================================
+# INSTALACIÓN
+# ============================================
+# En Kali Linux:
+#   sudo apt install python3-pip libpq-dev python3-dev -y
+#   python3 -m venv venv
+#   source venv/bin/activate
+#   pip install -r requirements.txt
+#
+# En Windows:
+#   pip install -r requirements.txt
+# ============================================

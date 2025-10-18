@@ -1,0 +1,32 @@
+# ============================================
+# DEPENDENCIAS CLIENTE MQTT - POSTGRESQL
+# Universidad Militar Nueva Granada
+# ============================================
+
+# Cliente MQTT para Python
+paho-mqtt==1.6.1
+
+# Conector PostgreSQL para Python
+psycopg2-binary==2.9.9
+
+# Manejo de variables de entorno
+python-dotenv==1.0.0
+
+# Análisis de datos (opcional para consultas)
+pandas==2.1.4
+
+# Herramientas de fecha y hora
+python-dateutil==2.8.2
+
+# ============================================
+# INSTALACIÓN
+# ============================================
+# pip install -r requirements.txt
+
+# ============================================
+# NOTAS PARA INSTALACIÓN
+# ============================================
+# 1. PostgreSQL debe estar instalado en el sistema
+# 2. En Windows: Descargar desde https://www.postgresql.org/download/windows/
+# 3. En Linux: sudo apt install postgresql postgresql-contrib
+# 4. Crear base de datos "SensoresMQTT" y usuario "postgres"
